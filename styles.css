@@ -1,0 +1,284 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+}
+
+.service-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.service-text {
+    max-width: 500px;
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin: 0;
+}
+
+.service-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.service-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Call-to-Action Section */
+.cta {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.cta p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #004494;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* Link to Google Fonts in the <head> section of your HTML */
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+</head>
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #333; /* Dark background color */
+    padding: 10px; /* Padding around the nav items */
+    text-align: center; /* Center align the nav items */
+}
+
+nav a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Add padding around each link */
+    display: inline-block; /* Align links horizontally */
+    font-family: 'Roboto', sans-serif; /* Fun and bold font */
+    font-weight: 700; /* Bold text */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+nav a:hover {
+    background-color: #575757; /* Darker background on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; /* Light cyan background */
+  color: #333; /* Default text color */
+}
+
+header {
+  background-color: #00796b; /* Teal color */
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #009688; /* Teal border */
+}
+
+/* Service Boxes */
+.service-box {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #b2dfdb; /* Light teal border */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  background-color: #e0f2f1; /* Very light teal background */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: scale(1.02);
+}
+
+/* Service Forms (Initially Hidden) */
+.service {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #b2dfdb; /* Light teal border */
+  border-radius: 10px;
+  background-color: #ffffff; /* White background */
+  display: none; /* Initially hide all services */
+}
+
+/* Show Active Services */
+.service.active {
+  display: block;
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #b2dfdb; /* Light teal border */
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/* Show Buttons */
+.show-button {
+  background-color: #00796b; /* Teal color */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.show-button:hover {
+  background-color: #004d40; /* Darker teal on hover */
+}
+
+/* Purchase Buttons */
+.purchase-button {
+  background-color: #1100ff; /* Blue color */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.purchase-button:hover {
+  background-color: #01579b; /* Darker blue on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .service-box,
+  .service {
+    margin-bottom: 1.5rem;
+  }
+
+  .show-button,
+  .purchase-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Additional styling for a wave color palette */
+body {
+  background: linear-gradient(to right, #e0f7fa, #80deea); /* Light gradient */
+}
+
+header {
+  background-color: #00abff; /* Dark teal */
+}
+
+.container {
+  background-color: #ffffff;
+}
+
+.service-box {
+  background-color: #e0f7fa; /* Light cyan */
+  border-color: #009688; /* Teal border */
+}
+
+.show-button {
+  background-color: #004d40; /* Dark teal */
+}
+
+.purchase-button {
+  background-color: #0288d1; /* Blue color */
+}

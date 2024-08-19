@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataWave.NG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DataWave.NG</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="business.html">Business</a>
+        </nav>
+    </header>
+
+
+
+<h1>Welcome to DataWave.NG</h1>
+        <p>Your one-stop solution for affordable and reliable data services. We offer top-up plans for major networks, cable subscriptions, and more!</p>
+    </header>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <img src="My website creation/DataWave-vtu/finalle/Ph.png" alt="" class="service-image">
+            <div class="service-text">
+                <h3>Data Top-Up</h3>
+                <p>Get the best data plans for MTN, Airtel, Glo, and 9Mobile at unbeatable prices.</p>
+                <a href="pricing.html">View Plans</a>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="cable-subscriptions.jpg" alt="Cable Subscriptions" class="service-image">
+            <div class="service-text">
+                <h3>Cable Subscriptions</h3>
+                <p>Subscribe to GOTV, DSTV, or Startimes with our easy and affordable packages.</p>
+                <a href="pricing.html">See Packages</a>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="airtime-topup.jpg" alt="Airtime Top-Up" class="service-image">
+            <div class="service-text">
+                <h3>Airtime Top-Up</h3>
+                <p>Top-up your airtime quickly and securely with our reliable service.</p>
+                <a href="pricing.html">Top-Up Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Save on Your Data?</h2>
+        <p>Join the DataWave.NG community and start saving on your data plans today!</p>
+        <a href="contact.html" class="cta-button">Contact Us</a>
+    </section>
+
+
+
+    <main>
+        <div class="container">
+            <div class="service-box" id="buy-data">
+                <h2>Buy Data</h2>
+                <button class="show-button" onclick="showService('buy-data-form')">Show</button>
+                <div class="service" id="buy-data-form">
+                    <div class="form-group">
+                        <label for="data-network">Network:</label>
+                        <select id="data-network">
+                            <option value="">mtn/glo/airtel/9mobile</option>
+                            <option value="mtn">MTN</option>
+                            <option value="airtel">Airtel</option>
+                            <option value="glo">Glo</option>
+                            <option value="9mobile">9mobile</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-plan">Data Plan:</label>
+                        <select id="data-plan">
+                            <!-- Options will be populated based on selected network -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-mobile-number">Mobile Number:</label>
+                        <input type="text" id="data-mobile-number" placeholder="Enter Mobile Number">
+                    </div>
+                    <button class="purchase-button" onclick="purchaseData()">Purchase</button>
+                </div>
+            </div>
+
+            <div class="service-box" id="cable-subscription">
+                <h2>Cable Subscription</h2>
+                <button class="show-button" onclick="showService('cable-subscription-form')">Show</button>
+                <div class="service" id="cable-subscription-form">
+                    <div class="form-group">
+                        <label for="cable-name">Cable Name:</label>
+                        <select id="cable-name">
+                            <option value="gotv">GOTV</option>
+                            <option value="dstv">DSTV</option>
+                            <option value="startime">Startime</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="iuc-number">IUC/Smart Card Number:</label>
+                        <input type="text" id="iuc-number" placeholder="Enter IUC/Smart Card Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="cable-plan">Cable Plan:</label>
+                        <select id="cable-plan">
+                            <!-- Options will be populated based on selected cable name -->
+                        </select>
+                    </div>
+                    <button class="purchase-button" onclick="purchaseCable()">Purchase</button>
+                </div>
+            </div>
+
+            <div class="service-box" id="result-checker">
+                <h2>Result Checker</h2>
+                <button class="show-button" onclick="showService('result-checker-form')">Show</button>
+                <div class="service" id="result-checker-form">
+                    <div class="form-group">
+                        <label for="exam-type">Exam Type:</label>
+                        <select id="exam-type">
+                            <option value="waec">WAEC</option>
+                            <option value="neco">NECO</option>
+                            <option value="nabteb">NABTEB</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" min="1" max="5">
+                    </div>
+                    <button class="purchase-button" onclick="purchaseResult()">Purchase</button>
+                </div>
+            </div>
+
+            <div class="service-box" id="airtime-top-up">
+                <h2>Airtime Top Up</h2>
+                <button class="show-button" onclick="showService('airtime-top-up-form')">Show</button>
+                <div class="service" id="airtime-top-up-form">
+                    <div class="form-group">
+                        <label for="airtime-mobile-number">Mobile Number:</label>
+                        <input type="text" id="airtime-mobile-number" placeholder="Enter Mobile Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="airtime-amount">Airtime Amount:</label>
+                        <select id="airtime-amount">
+                            <option value="100">100 Naira</option>
+                            <option value="200">200 Naira</option>
+                            <option value="300">300 Naira</option>
+                            <option value="400">400 Naira</option>
+                            <option value="500">500 Naira</option>
+                        </select>
+                    </div>
+                    <button class="purchase-button" onclick="purchaseAirtime()">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
