@@ -161,10 +161,13 @@ function purchaseResult() {
 
 function purchaseAirtime() {
   const mobileNumber = document.getElementById('airtime-mobile-number').value;
+  const networkNameElement = document.getElementById('network-name');
   const airtimeAmount = document.getElementById('airtime-amount').value;
 
-  const message = `Airtime Purchase: Mobile Number - ${mobileNumber}, Amount - ${airtimeAmount}`;
-  sendWhatsAppMessage(message);
+const networkName = networkNameElement.options[networkNameElement.selectedIndex].text;
+
+  const message = `Airtime Purchase: Mobile Number - ${mobileNumber}, Amount - ${airtimeAmount}, Network - ${networkName}`;
+    sendWhatsAppMessage(message);
 }
 
 // Function to send WhatsApp messages
