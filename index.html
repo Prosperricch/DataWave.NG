@@ -15,7 +15,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="pricing.html">Pricing</a>
-            <a href="business.html">Business</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
@@ -28,7 +28,7 @@
     <section class="services">
         <h2>Our Services</h2>
         <div class="service-item">
-            <img src="My website creation/DataWave-vtu/finalle/Ph.png" alt="" class="service-image">
+            
             <div class="service-text">
                 <h3>Data Top-Up</h3>
                 <p>Get the best data plans for MTN, Airtel, Glo, and 9Mobile at unbeatable prices.</p>
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="service-item">
-            <img src="cable-subscriptions.jpg" alt="Cable Subscriptions" class="service-image">
+            
             <div class="service-text">
                 <h3>Cable Subscriptions</h3>
                 <p>Subscribe to GOTV, DSTV, or Startimes with our easy and affordable packages.</p>
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="service-item">
-            <img src="airtime-topup.jpg" alt="Airtime Top-Up" class="service-image">
+            
             <div class="service-text">
                 <h3>Airtime Top-Up</h3>
                 <p>Top-up your airtime quickly and securely with our reliable service.</p>
@@ -146,6 +146,14 @@
                         <input type="text" id="airtime-mobile-number" placeholder="Enter Mobile Number">
                     </div>
                     <div class="form-group">
+                        <label for="airtime-amount">Network:</label>
+                        <select id="network-name">
+                            <option value="100">MTN</option>
+                            <option value="200">GLO</option>
+                            <option value="300">9MOBILE</option>
+                            <option value="400">AIRTEL</option>
+                            
+                        </select>
                         <label for="airtime-amount">Airtime Amount:</label>
                         <select id="airtime-amount">
                             <option value="100">100 Naira</option>
@@ -156,11 +164,14 @@
                         </select>
                     </div>
                     <button class="purchase-button" onclick="purchaseAirtime()">Purchase</button>
+                    <a href="I1.html">Top-Up Now</a>
                 </div>
             </div>
         </div>
     </main>
-
+<footer>
+        <p>&copy; 2024 DataWave.NG. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
